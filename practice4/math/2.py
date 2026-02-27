@@ -1,6 +1,5 @@
-base   = float(input("Length of base: "))
-height = float(input("Height of parallelogram: "))
-
-area = base * height
-
-print("Expected Output:", area)
+h=int(input())
+f1=int(input())
+f2=int(input())
+tr=h/2*(f1+f2)
+print(tr)
