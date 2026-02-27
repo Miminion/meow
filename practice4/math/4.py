@@ -1,8 +1,8 @@
-import math
 
-n = int((input()))
-s = int(input())
 
-area = (n * s ** 2) / (4 * math.tan(math.pi / n))
+b  = int(input())
+h = int(input())
 
-print(round(area))
+area = b * h
+
+print(area)
