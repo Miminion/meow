@@ -1,3 +1,0 @@
-Gen, male
-Lena,female
-Sera, female
