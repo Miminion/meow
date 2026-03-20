@@ -1,5 +1,4 @@
 import re
-import json
 with open("Practice5/raw.txt", "r", encoding="utf-8") as f:
     text = f.read()
 company = re.search(r"Филиал ТОО\s+(.+)", text)
