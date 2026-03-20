@@ -1,5 +1,0 @@
-Gena, male
-Lena,female
-Sera, female
-Sana, female
-Dana,female
