@@ -5,7 +5,5 @@ print(s)
 e = list(filter(lambda x: x % 2 == 0, n))
 print(e)
 
-
-
 p = reduce(lambda x, y: x * y, n)
 print(p)
