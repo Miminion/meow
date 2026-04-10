@@ -1,20 +1,20 @@
 CREATE OR REPLACE FUNCTION search_pattern(p text)
-RETURNS TABLE(first_name VARCHAR, phone VARCHAR) AS $$
+RETURNS TABLE(name VARCHAR, phone VARCHAR) AS $$
 BEGIN
     RETURN QUERY
-    SELECT first_name, phone
+    SELECT phonebook.name, phonebook.phone
     FROM phonebook
-    WHERE first_name ILIKE '%' || p || '%'
-       OR phone ILIKE '%' || p || '%';
+    WHERE phonebook.name ILIKE '%' || p || '%'
+       OR phonebook.phone ILIKE '%' || p || '%';
 END;
 $$ LANGUAGE plpgsql;
 
 
 CREATE OR REPLACE FUNCTION get_contacts_paginated(lim INT, off INT)
-RETURNS TABLE(id INT, first_name VARCHAR, phone VARCHAR) AS $$
+RETURNS TABLE(id INT, name VARCHAR, phone VARCHAR) AS $$
 BEGIN
     RETURN QUERY
-    SELECT *
+    SELECT phonebook.id, phonebook.name, phonebook.phone
     FROM phonebook
     LIMIT lim OFFSET off;
 END;

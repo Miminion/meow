@@ -3,5 +3,5 @@ DB_CONFIG = {
     "port": "5432",
     "dbname": "banana",
     "user": "medinameirambek",
-    "password":""
+    "password": ""
 }
