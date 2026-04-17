@@ -4,12 +4,12 @@ import os
 class MusicPlayer:
     def __init__(self):
         pygame.mixer.init()
-        self.playlist = []      
+        self.playlist = []     
         self.current_index = 0  
         self.is_playing = False
 
     def load_music_folder(self, folder):
-     
+      
         for f in sorted(os.listdir(folder)):
             if f.endswith(('.wav', '.mp3')):
                 self.playlist.append(os.path.join(folder, f))
@@ -43,7 +43,7 @@ class MusicPlayer:
         self.play()
 
     def get_position(self):
-        
+      
         if self.is_playing:
-            return pygame.mixer.music.get_pos() // 1000 
+            return pygame.mixer.music.get_pos() // 1000  
         return 0
