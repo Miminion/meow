@@ -8,9 +8,10 @@ HEIGHT = 600
 
 screen = pygame.display.set_mode((WIDTH, HEIGHT))
 pygame.display.set_caption("Paint")
+icon=pygame.image.load
 clock = pygame.time.Clock()
 
-# цвета
+
 WHITE  = (255, 255, 255)
 BLACK  = (0, 0, 0)
 RED    = (255, 0, 0)
@@ -96,9 +97,9 @@ while True:
                 brush_size = max(brush_size - 2, 2)
 
         if event.type == pygame.MOUSEBUTTONDOWN and event.button == 1:
-            # клик по панели инструментов
+      
             if not on_canvas:
-                # палитра
+                
                 colors = [BLACK, WHITE, RED, GREEN, BLUE, YELLOW, ORANGE, PURPLE]
                 for i, c in enumerate(colors):
                     x = 10 + i * 45
