@@ -135,7 +135,7 @@ def search_contacts():
     conn = get_connection()
     cur = conn.cursor()
 
-    cur.execute("SELECT * FROM search_contacts(%s::text)", (query,))  # исправлено: добавлен ::text
+    cur.execute("SELECT * FROM search_contacts(%s::text)", (query,)) 
     rows = cur.fetchall()
 
     print_rows(rows)
