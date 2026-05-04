@@ -1,0 +1,66 @@
+[
+    {
+        "username": "Ali",
+        "email": "ali@gmail.com",
+        "birthday": "2005-04-12",
+        "group": "Friend",
+        "phones": [
+            {
+                "phone": "+77011234567",
+                "type": "mobile"
+            }
+        ]
+    },
+    {
+        "username": "Aruzhan",
+        "email": "aru.work@gmail.com",
+        "birthday": "2004-11-03",
+        "group": "Friend",
+        "phones": [
+            {
+                "phone": "+77019876543",
+                "type": "work"
+            }
+        ]
+    },
+    {
+        "username": "Dias",
+        "email": "dias@mail.com",
+        "birthday": "2005-08-30",
+        "group": "Friend",
+        "phones": [
+            {
+                "phone": "+77013334455",
+                "type": "home"
+            }
+        ]
+    },
+    {
+        "username": "Example User",
+        "email": "example@gmail.com",
+        "birthday": "2000-01-01",
+        "group": "Other",
+        "phones": [
+            {
+                "phone": "+77010000000",
+                "type": "mobile"
+            },
+            {
+                "phone": "+77270000000",
+                "type": "home"
+            }
+        ]
+    },
+    {
+        "username": "Mom",
+        "email": "mom@gmail.com",
+        "birthday": "1978-02-20",
+        "group": "Family",
+        "phones": [
+            {
+                "phone": "+77015556677",
+                "type": "mobile"
+            }
+        ]
+    }
+]

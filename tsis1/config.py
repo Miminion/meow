@@ -1,7 +1,7 @@
 DB_CONFIG = {
     "host": "localhost",
     "port": "5432",
-    "dbname": "banana",
+    "dbname": "tsis1 phonebook",  
     "user": "medinameirambek",
-    "password": "2808"
+    "password": ""
 }

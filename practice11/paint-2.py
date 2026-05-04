@@ -43,6 +43,27 @@ preview   = None
 
 
 
+def draw_arrow(surface, color, start, end, line_w):
+    dx = end[0] - start[0]
+    dy = end[1] - start[1]
+    length = math.hypot(dx, dy)
+    if length == 0:
+        return
+
+    pygame.draw.line(surface, color, start, end, max(1, line_w))
+
+    head_len = min(20 + line_w * 2, length * 0.45)
+    angle = math.atan2(dy, dx)
+
+    left  = (end[0] - head_len * math.cos(angle - math.radians(28)),
+             end[1] - head_len * math.sin(angle - math.radians(28)))
+    right = (end[0] - head_len * math.cos(angle + math.radians(28)),
+             end[1] - head_len * math.sin(angle + math.radians(28)))
+
+    pygame.draw.polygon(surface, color, [end, left, right])
+
+
+
 def draw_equilateral_triangle(surface, color, start, end, line_w):
     
     x1, y1 = start
@@ -135,6 +156,8 @@ def apply_shape(surface, tool_name, start, end, color, line_w):
 
 
 
+
+
 # менюшка
 TOOL_ROW1 = [
     ("pencil",   "Pencil"),
@@ -222,7 +245,7 @@ def check_tool_click(mx, my):
 
 
 def is_shape_tool(t):
-    return t in ("line", "rect", "circle", "square", "right_tri", "equi_tri", "rhombus")
+    return t in ("line", "rect", "circle", "square", "right_tri", "equi_tri", "rhombus", "arrow")
 
 
 #лупик
@@ -243,7 +266,7 @@ while True:
                 pygame.quit()
                 sys.exit()
             if event.key == pygame.K_c:
-                canvas.fill(WHITE)    # Clear canvas
+                canvas.fill(WHITE)    # клиар
             if event.key == pygame.K_UP:
                 brush_size = min(brush_size + 2, 50)
             if event.key == pygame.K_DOWN:

@@ -1,0 +1,38 @@
+[
+    {
+        "name": "mmm",
+        "score": 2257,
+        "distance": 1437,
+        "coins": 12
+    },
+    {
+        "name": "mmm",
+        "score": 1645,
+        "distance": 1115,
+        "coins": 8
+    },
+    {
+        "name": "mimi",
+        "score": 287,
+        "distance": 191,
+        "coins": 1
+    },
+    {
+        "name": "mimi",
+        "score": 196,
+        "distance": 144,
+        "coins": 1
+    },
+    {
+        "name": "mimi",
+        "score": 167,
+        "distance": 191,
+        "coins": 0
+    },
+    {
+        "name": "hhhh",
+        "score": 152,
+        "distance": 174,
+        "coins": 0
+    }
+]

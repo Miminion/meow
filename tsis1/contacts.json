@@ -1,0 +1,18 @@
+[
+    {
+        "username": "Example User",
+        "email": "example@gmail.com",
+        "birthday": "2000-01-01",
+        "group": "Other",
+        "phones": [
+            {
+                "phone": "+77010000000",
+                "type": "mobile"
+            },
+            {
+                "phone": "+77270000000",
+                "type": "home"
+            }
+        ]
+    }
+]
